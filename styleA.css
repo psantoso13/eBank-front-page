@@ -1,0 +1,400 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: black;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+
+.container {
+    width: 380px;
+    margin: auto;
+    font-family: Outfit, arial;
+    padding-right: 30px;
+}
+
+.top {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    background-color: hsl(0, 0%, 98%);
+    padding-left: 50px;
+}
+
+.top .a {
+    flex: 2;
+}
+
+.top .b {
+    flex:4;
+    text-align: center;
+    justify-content: center;
+}
+
+.top .b a {
+    text-decoration: none;
+}
+
+.top .b a:hover {
+    text-decoration: underline;
+    columns: hsl(233, 26%, 24%);
+}
+
+.top .b span{
+    color: hsl(233, 8%, 62%);
+    margin: 10px;
+    font-size: 11px;
+}
+
+.top .c {
+    flex:2;
+}
+
+.top .c div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 120px;
+    height: 30px;
+    color: white;
+    font-size: 13px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    cursor: pointer;
+}
+
+.top .c div:hover {
+    background-image: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%)); 
+}
+
+.contentA {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.contentA .a {
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.contentA .a .a1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.contentA .a .a2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.contentA .a .a3 {
+    display: flex;
+    justify-content: center;
+}
+
+.contentA .a .a3 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    color: white;
+    font-size: 13px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    cursor: pointer;
+}
+
+.contentA .a .a3 div:hover {
+    background-image: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+.contentA .b {
+    display: flex;
+    justify-content: end;
+}
+
+.contentA .b img {
+    width: 280px;
+}
+
+.kenapaPilih {
+    display: flexbox;
+    width: 100%;
+    background-color: hsl(220, 16%, 96%);
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.kenapaPilih .a {
+    width: 85%;   
+    margin: auto;
+}
+
+.kenapaPilih .a .a1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.kenapaPilih .a .a2{
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.pilih {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.pilih .c0 {
+    display: flexbox;
+    width: 85%;
+    margin: auto;
+}
+
+.pilih .c0 .c {
+    display: flex;
+    justify-content: center;
+}
+
+.pilih .c0 .c img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.pilih .c0 .c1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pilih .c0 .c2 {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
+article {
+    padding-top: 30px;
+    background-color: hsl(0, 0%, 98%);
+    padding-left: 50px;
+}
+
+.judul {
+    font-size: 25px;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.artikel {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 85%;    
+}
+
+.artikel .artikelWrap {
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.artikel .d img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.artikel .d0 {
+   padding-left: 8px;
+   padding-right: 25px;   
+}
+
+.artikel .d0 .d1 {
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+
+.artikel .d0 .d2 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.artikel .d0 .d3 {
+    font-size: 10px;
+}
+
+
+.footer {
+    display: block;
+    height: 400px;
+    margin: auto;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    background-color: hsl(233, 26%, 24%);
+}
+
+.footer .footerKiri {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer .footerKiri .footerImg{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer .footerKiri .sosMed{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer .x {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer .x .x1 a {
+    text-decoration: none;
+}
+
+.footer .x .x1 div{
+    margin-bottom: 11px;
+    color: hsl(233, 8%, 62%);
+}
+
+.footer .x .x1 div:hover {
+    color: hsl(220, 16%, 96%)
+}
+
+.footer .x .x2 a {
+    text-decoration: none;
+}
+
+.footer .x .x2 div{
+    margin-bottom: 11px;
+    color: hsl(233, 8%, 62%);
+}
+
+.footer .x .x2 div:hover {
+    color: hsl(220, 16%, 96%)
+}
+
+.footer .z {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.footer .z .z1 {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer .z .z1 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    color: white;
+    font-size: 13px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    cursor: pointer;
+}
+
+.footer .z .z1 div:hover {
+    background-image: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+.footer .z .z2 {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    font-size: 13px;
+    color: aliceblue;
+}
+
+
+/* clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

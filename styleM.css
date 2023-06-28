@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: black;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+
+.container {
+    width: 380px;
+    margin: auto;
+    font-family: Outfit, arial;
+    background-image: url(images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top 0px right 0px;
+}
+
+.container .backImg {
+    width: 380px;
+    background-image: linear-gradient(to bottom, hsla(233, 26%, 24%, 0.5), hsl(0, 0%, 98%));
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    height: 700px;
+    background-image:  hsl(0, 0%, 98%);
+    z-index: 1000;
+}
+
+.top .a {
+    display: flex;
+    background-color: hsl(220, 16%, 96%);
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.top .a img {
+    width: 200px;
+}
+
+.top .b {
+    display: flexbox;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    background-color: hsl(0, 0%, 100%);
+    padding-top: 5px;
+    padding-bottom: 30px;
+    z-index: 100;
+}
+
+.top .b a span{
+    font-size: 18px;
+}
+
+.top .b a {
+    text-decoration: none;
+}
+
+.top .b a:hover {
+    text-decoration: underline;
+    columns: hsl(233, 26%, 24%);
+}
+
+.top .b span{
+    color: hsl(233, 8%, 62%);
+    margin: 10px;
+    font-size: 14px;
+}
+
+
+.top .c {
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.top .c .c1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.top .c .c2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.top .c .c3 {
+    display: flex;
+    justify-content: center;
+}
+
+.top .c .c3 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    cursor: pointer;
+}
+
+.top .c .c3 div:hover {
+    background-image: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+
+/* clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
