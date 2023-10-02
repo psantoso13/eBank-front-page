@@ -10,6 +10,6 @@ window.onresize = function(event) {
       window.location = "index.html";
   }
   
-  if (window.innerWidth < 720 && html_location !== "indexM.html") {
-      window.location = "indexM.html";
+  if (window.innerWidth < 720 && html_location !== "indexm.html") {
+      window.location = "indexm.html";
   }
